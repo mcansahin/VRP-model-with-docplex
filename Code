@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 rnd = np.random
 rnd.seed(0)
 """
-n = node sayısı
-Q= araç kapasitesi
+n = nods
+Q= cehicle capacity
 q= demand
-A = gidilebilecek yerler
+A = next probably nodes
 c = cost
 
 """
