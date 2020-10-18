@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 rnd = np.random
 rnd.seed(0)
 """
-n = node sayısı
-Q= araç kapasitesi
+n = node number
+Q= vehicle capacity
 q= demand
-A = gidilebilecek yerler
+A = next probably nodes
 c = cost
 
 """
@@ -34,10 +34,7 @@ c = {(i,j):np.hypot(loc_x[i]-loc_x[j],loc_y[i]-loc_y[j]) for i,j in A}
 Y=[(i,j,f) for i,j in A for f in k]
 
 from docplex.mp.model import Model
-"""
-x binary olarak o yoldan gidilip gidilmiyeceği 
-yollar A olarak atandı
-"""
+
 
 
 md1= Model('CVRP')
